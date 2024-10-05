@@ -11,23 +11,36 @@
     <p id="description">A simple customer feedback survey form</p>
     <form id="survey-form">
       <div>
-        <label id="name-label">Enter your name<input required id="name" type="text" placeholder="Enter your name"/></label>
+        <label id="name-label">Enter your name: <input required id="name" type="text" placeholder="Enter your name"/></label>
       </div>
       
-      <div><label id="email-label">Enter your email<input required id="email" type="email" placeholder="Enter your email"/></label></div>
+      <div><label id="email-label">Enter your email: <input required id="email" type="email" placeholder="Enter your email"/></label></div>
       
-      <div><label id="number-label">Enter your number<input id="number" type="number" min="4" max="8" placeholder="Enter your number"/></label></div>
+      <div><label id="number-label">Enter your number: <input id="number" type="number" min="4" max="8" placeholder="Enter your number"/></label></div>
     <select id="dropdown">
       <option>Select an option</option>
       <option>Option A</option>
       <option>Option B</option>
     </select>
-    <label for="Option A"><input type="radio" name="name"value="Option A" />Option A</label>
-    <label for="Option B"><input type="radio" name="name" value="Option B"/>Option B</label>
+    <fieldset>
+      <p>How satisfied are you with our service?</p>
+      <label for="Option A"><input type="radio" name="name"value="Option A" />Option A</label>
+      <label for="Option B"><input type="radio" name="name" value="Option B"/>Option B</label>
+      <label for="Option A"><input type="radio" name="name"value="Option A" />Option A</label>
+      <label for="Option B"><input type="radio" name="name" value="Option B"/>Option B</label>
+      <label for="Option A"><input type="radio" name="name"value="Option A" />Option A</label>
+      <label for="Option B"><input type="radio" name="name" value="Option B"/>Option B</label>
     
-    <label for="Option A"><input type="checkbox" name="name" value="Option A" />Option A</label>
+    </fieldset>
+    <div>
+      <label for="Option A"><input type="checkbox" name="name" value="Option A" />Option A</label>
     <label for="Option B"><input type="checkbox" name="name" value="Option A" />Option B</label>
-    <textarea>Any additional comments</textarea>
+    
+    </div>
+    <div>
+      <textarea>Any additional comments</textarea>
+    </div>
+   
     <button id="submit">submit</button>
       
     </form>
