@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Customer Feedback Survey</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <h1 id="title">Customer Feedback Survey
+    </h1>
+    <p id="description">A simple survey form</p>
+    <form id="survey-form">
+      <label id="name-label">Enter your name<input required id="name" type="text" placeholder="Enter your name"/></label>
+      
+      <label id="email-label">Enter your email<input required id="email" type="email" placeholder="Enter your email"/></label>
+      
+      <label id="number-label">Enter your number<input id="number" type="number" min="4" max="8" placeholder="Enter your number"/></label>
+    <select id="dropdown">
+      <option>Select an option</option>
+      <option>Option A</option>
+      <option>Option B</option>
+    </select>
+    <label for="Option A"><input type="radio" name="name"value="Option A" />Option A</label>
+    <label for="Option B"><input type="radio" name="name" value="Option B"/>Option B</label>
+    
+    <label for="Option A"><input type="checkbox" name="name" value="Option A" />Option A</label>
+    <label for="Option B"><input type="checkbox" name="name" value="Option A" />Option B</label>
+    <textarea>Any additional comments</textarea>
+    <button id="submit">submit</button>
+      
+    </form>
+
+  </body>
+  
+
+</html>
