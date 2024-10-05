@@ -10,27 +10,31 @@
     <h1 id="title">Customer Feedback Survey</h1>
     <p id="description">A simple customer feedback survey form</p>
     <form id="survey-form">
-      <div>
-        <label id="name-label">Enter your name: <input required id="name" type="text" placeholder="Enter your name"/></label>
-      </div>
-      
-      <div><label id="email-label">Enter your email: <input required id="email" type="email" placeholder="Enter your email"/></label></div>
-      
-      <div><label id="number-label">Enter your number: <input id="number" type="number" min="4" max="8" placeholder="Enter your number"/></label></div>
+      <fieldset>
+        <legend><strong>Personal Information</strong></legend>
+        <div>
+          <label id="name-label">Enter your name: <input required id="name" type="text" placeholder="Enter your name"/></label>
+        </div>
+        <div>
+          <label id="email-label">Enter your email: <input required id="email" type="email" placeholder="Enter your email"/></label>
+        </div>
+        <div>
+          <label id="number-label">Enter your number: <input id="number" type="number" min="4" max="8" placeholder="Enter your number"/></label>
+        </div>
+      </fieldset>
     <select id="dropdown">
       <option>Select an option</option>
       <option>Option A</option>
       <option>Option B</option>
     </select>
     <fieldset>
+      <legend><strong>Survey Questions</strong></legend>
       <p>How satisfied are you with our service?</p>
-      <label for="Option A"><input type="radio" name="name"value="Option A" />Option A</label>
-      <label for="Option B"><input type="radio" name="name" value="Option B"/>Option B</label>
-      <label for="Option A"><input type="radio" name="name"value="Option A" />Option A</label>
-      <label for="Option B"><input type="radio" name="name" value="Option B"/>Option B</label>
-      <label for="Option A"><input type="radio" name="name"value="Option A" />Option A</label>
-      <label for="Option B"><input type="radio" name="name" value="Option B"/>Option B</label>
-    
+      <label for="Very Satisfied"><input type="radio" name="satisfaction-level"value="Very Satisfied" />Very Satisfied</label>
+      <label for="Satisfied"><input type="radio" name="satisfaction-level" value="Satisfied"/>Satisfied</label>
+      <label for="Neutral"><input type="radio" name="satisfaction-level"value="Neutral" />Neutral</label>
+      <label for="Dissatisfied"><input type="radio" name="satisfaction-level" value="Dissatisfied"/>Dissatisfied</label>
+      <label for="Very Dissatisfied"><input type="radio" name="satisfaction-level"value="Very Dissatisfied" />Very Dissatisfied</label>
     </fieldset>
     <div>
       <label for="Option A"><input type="checkbox" name="name" value="Option A" />Option A</label>
