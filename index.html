@@ -23,51 +23,57 @@
           <label id="number-label">Enter your number: <input id="number" type="number" min="4" max="8" placeholder="Enter your number"/></label>
         </div>
       </fieldset>
-    <select id="dropdown">
-      <option>Select an option</option>
-      <option>Option A</option>
-      <option>Option B</option>
-    </select>
+    
     <fieldset>
       <legend><strong>Survey Questions</strong></legend>
-      <p>How satisfied are you with our service?</p>
-      <label for="Very Satisfied"><input type="radio" name="satisfaction-level"value="Very Satisfied" />Very Satisfied</label>
-      <label for="Satisfied"><input type="radio" name="satisfaction-level" value="Satisfied"/>Satisfied</label>
-      <label for="Neutral"><input type="radio" name="satisfaction-level"value="Neutral" />Neutral</label>
-      <label for="Dissatisfied"><input type="radio" name="satisfaction-level" value="Dissatisfied"/>Dissatisfied</label>
-      <label for="Very Dissatisfied"><input type="radio" name="satisfaction-level"value="Very Dissatisfied" />Very Dissatisfied</label>
+      <label>How satisfied are you with our service?</label><br>
+      <label for="Very Satisfied"><input type="radio" name="satisfaction-level"value="Very Satisfied" />Very Satisfied</label><br>
+      <label for="Satisfied"><input type="radio" name="satisfaction-level" value="Satisfied"/>Satisfied</label><br>
+      <label for="Neutral"><input type="radio" name="satisfaction-level"value="Neutral" />Neutral</label><br>
+      <label for="Dissatisfied"><input type="radio" name="satisfaction-level" value="Dissatisfied"/>Dissatisfied</label><br>
+      <label for="Very Dissatisfied"><input type="radio" name="satisfaction-level"value="Very Dissatisfied" />Very Dissatisfied</label><br><br>
 
-      <p>How would you rate the quality of the product/service?</p>
-      <label for="Excellent"><input type="radio" name="quality-rate"value="Excellent" />Excellent</label>
-      <label for="Good"><input type="radio" name="quality-rate" value="Good"/>Good</label>
-      <label for="Average"><input type="radio" name="quality-rate"value="Average" />Average</label>
-      <label for="Poor"><input type="radio" name="quality-rate" value="Poor"/>Poor</label>
-      <label for="Very Poor"><input type="radio" name="quality-rate"value="Very Poor" />Very Poor</label>
+      <label>How would you rate the quality of the product/service?</label><br>
+      <select id="product-quality" name="product-quality" required>
+        <option >Select Option</option>
+        <option value="Excellent">Excellent</option>
+        <option value="Good">Good</option>
+        <option value="Average">Average</option>
+        <option value="Poor">Poor</option>
+        <option value="Very Poor">Very Poor</option>
+        
+        
+  
+        </select><br><br>
 
-      <p>How likely are you to recommend our product/service to others?</p>
-      <label for="Very Likely"><input type="radio" name="recommend"value="Very Likely" />Very Likely</label>
-      <label for="Likely"><input type="radio" name="recommend" value="Likely"/>Likely</label>
-      <label for="Neutral"><input type="radio" name="recommend"value="Neutral" />Neutral</label>
-      <label for="Unlikely"><input type="radio" name="recommend" value="Unlikely"/>Unlikely</label>
-      <label for="Very Unlikely"><input type="radio" name="recommend"value="Very Unlikely" />Very Unlikely</label>
+      <label>How likely are you to recommend our product/service to others?</label><br>
+      <label for="Very Likely"><input type="radio" name="recommend"value="Very Likely" />Very Likely</label><br>
+      <label for="Likely"><input type="radio" name="recommend" value="Likely"/>Likely</label><br>
+      <label for="Neutral"><input type="radio" name="recommend"value="Neutral" />Neutral</label><br>
+      <label for="Unlikely"><input type="radio" name="recommend" value="Unlikely"/>Unlikely</label><br>
+      <label for="Very Unlikely"><input type="radio" name="recommend"value="Very Unlikely" />Very Unlikely</label><br><br>
 
-      <p>Which aspect of our service do you find most valuable?</p>
-      <label for="Very Likely"><input type="checkbox" name="valuable-service"value="Product Quality" />Product Quality</label>
-      <label for="Customer Service"><input type="checkbox" name="valuable-service" value="Customer Service"/>Customer Service</label>
-      <label for="Pricing"><input type="checkbox" name="valuable-service"value="Pricing" />Pricing</label>
-      <label for="Convenience"><input type="checkbox" name="valuable-service" value="Convenience"/>Convenience</label>
-      <label for="Other"><input type="checkbox" name="valuable-service"value="Other" />Other: <input type="text" name="valuable-service" value="__________"></label>
+      <label>Which aspect of our service do you find most valuable?</label><br>
+      <label for="Very Likely"><input type="checkbox" name="valuable-service"value="Product Quality" />Product Quality</label><br>
+      <label for="Customer Service"><input type="checkbox" name="valuable-service" value="Customer Service"/>Customer Service</label><br>
+      <label for="Pricing"><input type="checkbox" name="valuable-service"value="Pricing" />Pricing</label><br>
+      <label for="Convenience"><input type="checkbox" name="valuable-service" value="Convenience"/>Convenience</label><br>
+      <label for="Other">Other: </label>
+      <input type="text" name="other-valuable-service" /><br><br>
 
+     
+      <label>How can we improve your experience?</label><br>
       <div>
-        <textarea>How can we improve your experience?</textarea>
+        <textarea>Enter here...</textarea>
       </div>
 
-      <p>Would you like to be contacted for future promotions or surveys?</p>
+      <label>Would you like to be contacted for future promotions or surveys?</label>
       <label for="Yes"><input type="radio" name="future-promotion"value="Yes" />Yes</label>
-      <label for="No"><input type="radio" name="future-promotion" value="No"/>No</label>
-
+      <label for="No"><input type="radio" name="future-promotion" value="No"/>No</label><br><br>
+      
+      <label>Any additional comments?</label><br>
       <div>
-        <textarea>Any additional comments</textarea>
+        <textarea>Please enter here...</textarea>
       </div>
     </fieldset>
     
