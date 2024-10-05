@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Customer Feedback Survey</title>
     <link rel="stylesheet" href="styles.css">
 
@@ -9,7 +10,7 @@
   <body>
     <h1 id="title">Customer Feedback Survey</h1>
     <p id="description">A simple customer feedback survey form</p>
-    <form id="survey-form">
+    <form id="survey-form" action="/submit-survey" method="POST">
       <fieldset>
         <legend><strong>Personal Information</strong></legend>
         <div>
